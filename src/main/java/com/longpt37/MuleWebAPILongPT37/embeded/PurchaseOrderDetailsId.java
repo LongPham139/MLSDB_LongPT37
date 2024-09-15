@@ -8,5 +8,5 @@ import java.io.Serializable;
 public class PurchaseOrderDetailsId implements Serializable {
     private String orderNo;
     private String productCode;
-    private float purchasePrice;
+    private double purchasePrice;
 }

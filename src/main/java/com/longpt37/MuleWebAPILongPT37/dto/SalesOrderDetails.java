@@ -5,12 +5,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.IdClass;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @Table(name = "SalesOrderDetails")
 @IdClass(SalesOrderDetailsId.class)
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class SalesOrderDetails {
     @Id
     private String orderNo;
@@ -18,6 +24,6 @@ public class SalesOrderDetails {
     private String productCode;
     private int quantity;
     @Id
-    private float salesPrice;
-    private float tax;
+    private double salesPrice;
+    private double tax;
 }
