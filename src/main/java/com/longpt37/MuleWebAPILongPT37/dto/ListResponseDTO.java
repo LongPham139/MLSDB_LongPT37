@@ -1,4 +1,4 @@
-package com.LongPT37.MuleWebAPI.model;
+package com.longpt37.MuleWebAPILongPT37.dto;
 
 import lombok.Data;
 
